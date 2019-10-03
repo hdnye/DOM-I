@@ -43,6 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
 /*--Add nav styling here--*/
+
 let newNav = document.querySelectorAll('a');
 newNav[0].textContent = siteContent.nav['nav-item-1'];
 newNav[1].textContent = siteContent.nav['nav-item-2'];
@@ -53,6 +54,7 @@ newNav[5].textContent = siteContent.nav['nav-item-6'];
 
 
 /*--Add title styling here--*/
+
 let newCtaHeader = document.querySelector('h1');
 newCtaHeader.textContent = siteContent.cta['h1'];
 
@@ -65,12 +67,19 @@ newCtaImg.setAttribute('src', siteContent['cta']['img-src'])
 
 
 /*--Add Main Content styling here-- */
-let newTopCont = document.querySelector('.top-content');
 
+let newMain = document.querySelectorAll('.top-content .text-content h4');
+newMain[0].textContent = siteContent.main-content['features-h4'];
+newMain[1].textContent = siteContent.main-content['about-h4'];
+
+let newMnTwo = document.querySelectorAll('.top-content .text-content p');
+newMnTwo[0].textContent = siteContent.main-content['features-content'];
+newMnTwo[1].textContent = siteContent.main-content['about-content'];
 
 
 
 let newMidImg = document.getElementById('middle-img');
-newMidImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+newMidImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 
+/*--Add Bottom Styling here-- */
