@@ -63,6 +63,8 @@ const newTag = document.createElement('a');
 newTag.textContent = 'Home';
 
 navTag.prepend(newTag);
+// newNav.forEach(newTag => newTag.style.color = 'green');
+
 
 
 
