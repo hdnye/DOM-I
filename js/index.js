@@ -45,13 +45,15 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 /*--Add nav styling here--*/
 
 let newNav = document.querySelectorAll('a');
-newNav[0].textContent = siteContent.nav['nav-item-1'];
-newNav[1].textContent = siteContent.nav['nav-item-2'];
-newNav[2].textContent = siteContent.nav['nav-item-3'];
-newNav[3].textContent = siteContent.nav['nav-item-4'];
-newNav[4].textContent = siteContent.nav['nav-item-5'];
-newNav[5].textContent = siteContent.nav['nav-item-6'];
+// newNav[0].textContent = siteContent.nav['nav-item-1'];
+// newNav[1].textContent = siteContent.nav['nav-item-2'];
+// newNav[2].textContent = siteContent.nav['nav-item-3'];
+// newNav[3].textContent = siteContent.nav['nav-item-4'];
+// newNav[4].textContent = siteContent.nav['nav-item-5'];
+// newNav[5].textContent = siteContent.nav['nav-item-6'];
 
+newNav.forEach = siteContent['nav'];
+                             
 
 /*--Add title styling here--*/
 
@@ -69,17 +71,28 @@ newCtaImg.setAttribute('src', siteContent['cta']['img-src'])
 /*--Add Main Content styling here-- */
 
 let newMain = document.querySelectorAll('.top-content .text-content h4');
-newMain[0].textContent = siteContent.main-content['features-h4'];
-newMain[1].textContent = siteContent.main-content['about-h4'];
+newMain[0].textContent = siteContent['main-content']['features-h4'];
+newMain[1].textContent = siteContent['main-content']['about-h4'];
 
 let newMnTwo = document.querySelectorAll('.top-content .text-content p');
-newMnTwo[0].textContent = siteContent.main-content['features-content'];
-newMnTwo[1].textContent = siteContent.main-content['about-content'];
-
-
+newMnTwo[0].textContent = siteContent['main-content']['features-content'];
+newMnTwo[1].textContent = siteContent['main-content']['about-content'];
 
 let newMidImg = document.getElementById('middle-img');
 newMidImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 
 /*--Add Bottom Styling here-- */
+
+let newBtm = document.querySelectorAll('.bottom-content .text-content h4');
+newBtm[0].textContent = siteContent['main-content']['services-h4'];
+newBtm[1].textContent = siteContent['main-content']['product-h4'];
+newBtm[2].textContent = siteContent['main-content']['vision-h4'];
+
+let newBtmThree = document.querySelectorAll('.bottom-content .text-content p');
+newBtmThree[0].textContent = siteContent['main-content']['services-content'];
+newBtmThree[1].textContent = siteContent['main-content']['product-content'];
+newBtmThree[2].textContent = siteContent['main-content']['vision-content'];
+
+/*--Add Contact Styling here--*/
+
